@@ -6,6 +6,7 @@ we can define functions to eliminate repetitive code and to organize responsibil
 
 You are free to update your code to use additional syntaxes and other Python features not covered yet, except for classes.
 '''
+
 result = 0
 hist = []
 id = 1
