@@ -1,32 +1,35 @@
-from calc_app_mod.console import console_result_output, console_int_input
-history = []
+from calc_app_mod.calc import add, sub, mul, div
+
 last_entry_id = 0
 
-def console_history_output():
-    for history_entry in history:
-        print(history_entry)
-def command_history():
-    console_history_output()
-def append_history_entry(command, operand):
+def append_history_entry(history, command, operand):
     global last_entry_id
     last_entry_id = last_entry_id + 1
     history_entry = {
         "id": last_entry_id,
-        "Command": command,
-        "Operand": operand,
+        "op_name": command,
+        "op_value": operand,
     }
     history.append(history_entry)
 
-
-def command_clear():
-    global result
-    result = 0.0
-    history.clear()
-    console_result_output(result)
-
-def command_remove():
-    history_entry_id = console_int_input("Enter the history entry id to remove: ")
+def remove_history_entry(history, history_entry_id):
     for history_entry in history:
         if history_entry["id"] == history_entry_id:
             history.remove(history_entry)
             break
+
+def clear_history_entries(history):
+    history.clear()
+
+def calc_result(history):
+    result = 0
+    for entry in history:
+        if entry["op_name"] == "add":
+            result = add(result, entry["op_value"])
+        elif entry["op_name"] == "subtract":
+            result = sub(result, entry["op_value"])
+        elif entry["op_name"] == "multiply":
+            result = mul(result, entry["op_value"])
+        elif entry["op_name"] == "divide":
+            result = div(result, entry["op_value"])
+    return result

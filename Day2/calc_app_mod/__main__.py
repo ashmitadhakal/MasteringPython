@@ -1,4 +1,4 @@
-from calc_app_mod.command_loop import command_loop
+from calc_app_mod.command import command_loop
 
 
 def main():
