@@ -1,3 +1,4 @@
+import logging
 def add(result, operand):
     return result + operand
 
@@ -11,4 +12,9 @@ def mul(result, operand):
 
 
 def div(result, operand):
-    return result / operand
+    try:
+        return result/operand
+    except ZeroDivisionError:
+        logging.warning(f"Cannot divide by zero.")
+        return None
+    

@@ -5,10 +5,12 @@ from calc_app_mod_OOP.console_output import (
     console_error_output, console_history_output,
     console_info_output, console_result_output
 )
+import logging
 #from calc_app_mod_OOP.calc import add, sub, mul, div
 from .history import History
 
 history = History() 
+
 
 def command_clear():
     history.clear_history_entries()
@@ -28,6 +30,7 @@ def command_history():
 
 def command_invalid(command):
     console_error_output(f"Unknown command '{command}'")
+    logging.warning(f"Unknown command: '{command}'")
 
 def command_exit():
     console_info_output("Calculator exiting...")

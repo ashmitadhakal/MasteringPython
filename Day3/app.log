@@ -1,0 +1,22 @@
+INFO: This is info message!
+WARNING: This is a warning message!
+ERROR: This is an error message!
+CRITICAL: This is a critical message!
+WARNING: This is a warning message!
+ERROR: This is an error message!
+CRITICAL: This is a critical message!
+DEBUG: Starting the program
+DEBUG: Starting the program
+CRITICAL: Unexpected error occured.
+Traceback (most recent call last):
+  File "/Users/ash14476/Library/CloudStorage/OneDrive-Esri/Github_repos/MasteringPython/Day3/error_handling/good_pattern.py", line 12, in main
+    raise Exception("Something went wrong")
+Exception: Something went wrong
+DEBUG: Ending the program
+DEBUG: Starting the program
+CRITICAL: Unexpected error occured.
+Traceback (most recent call last):
+  File "/Users/ash14476/Library/CloudStorage/OneDrive-Esri/Github_repos/MasteringPython/Day3/error_handling/good_pattern.py", line 11, in main
+    raise Exception("Something went wrong")
+Exception: Something went wrong
+DEBUG: Ending the program

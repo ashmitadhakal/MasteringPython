@@ -32,6 +32,7 @@ class History:
             elif entry["op_name"] == "multiply":
                 result = mul(result, entry["op_value"])
             elif entry["op_name"] == "divide":
+                
                 result = div(result, entry["op_value"])
         return result
 '''
