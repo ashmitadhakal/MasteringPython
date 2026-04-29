@@ -13,8 +13,5 @@ class Person:
     def greet(self):
         print(f"Hi, I am {self.fn} and I'm {self.age} years old. I am from {self.city}")
     def is_adult(self):
-        if self.age>18:
-            return True
-        else:
-            return False
+        return self.age>18
     
