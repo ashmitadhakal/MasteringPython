@@ -1,4 +1,4 @@
-from calc_app_mod_OOP.command import command_loop
+from calc_app_mod_OOP_file.command import command_loop
 import logging
 
 logging.basicConfig(
@@ -12,7 +12,7 @@ logging.debug("This is a debug message!")
 logging.info("This is info message!")
 def main():
     print("Calculator Tool")
-    print("Available commands: add, subtract, multiply, divide, clear, exit, history, remove")
+    print("Available commands: add, subtract, multiply, divide, clear, exit, history, remove, save")
 
     command_loop()
 

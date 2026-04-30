@@ -1,4 +1,4 @@
-from calc_app_mod_OOP.calc import add, sub, mul, div
+from calc_app_mod_OOP_file.calc import add, sub, mul, div
 
 last_entry_id = 0
 
@@ -6,6 +6,8 @@ class History:
     def __init__(self):
         self.entries = []
         self.last_entry_id = 0
+    def __repr__(self):
+        return f"history<{self.__dict__}>"
     def append_history_entry(self, command, operand):
         self.last_entry_id += 1
         entries = {
