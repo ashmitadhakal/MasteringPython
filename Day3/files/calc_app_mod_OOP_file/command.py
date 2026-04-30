@@ -69,7 +69,7 @@ def command_loop():
         elif command == "save":
             with open("my_calc.json","w") as f:
                 json.dump(history.entries,f)
-            print("history saved")
+            print("History saved")
         elif command == "load":
             file_name = console_str_input("Enter the file name:")
             try:

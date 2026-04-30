@@ -1,0 +1,9 @@
+WARNING: Cannot divide by zero.
+WARNING: Unknown command: 'suntract'
+WARNING: Unknown command: '7'
+ERROR: Failed to load history from his_43
+Traceback (most recent call last):
+  File "/Users/ash14476/Library/CloudStorage/OneDrive-Esri/Github_repos/MasteringPython/Day4/Iterables/calc_app_mod_OOP_file_Iterable/history.py", line 47, in load_from_file
+    with open(file_name, "r", encoding="utf-8") as f:
+         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'his_43'

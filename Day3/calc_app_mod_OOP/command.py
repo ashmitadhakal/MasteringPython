@@ -33,6 +33,7 @@ def command_invalid(command):
     logging.warning(f"Unknown command: '{command}'")
     console_error_output(f"Unknown command '{command}'")
     
+
 def command_exit():
     console_info_output("Calculator exiting...")
 

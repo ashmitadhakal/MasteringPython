@@ -5,6 +5,8 @@ class Person:
     def __init__(self, fn, ln):
         self.fn = fn
         self.ln = ln
+    
+    
 
 person = Person("bob", "smith")
 print(person.__dict__)
