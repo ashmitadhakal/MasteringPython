@@ -1,0 +1,24 @@
+def colors():
+    print("in the colors function")
+    yield "red"
+    print("in the colors function")
+    yield "green"
+    print("in the colors function")
+    yield "blue"
+
+# for color in colors():
+#     print("in the for-in loop")
+#     print(color)
+
+colors_iter = iter(colors())
+color=next(colors_iter)
+print(color)
+
+color=next(colors_iter)
+print(color)
+
+color=next(colors_iter)
+print(color)
+
+color=next(colors_iter)
+print(color)

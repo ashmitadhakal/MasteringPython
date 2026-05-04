@@ -7,3 +7,32 @@ Traceback (most recent call last):
     with open(file_name, "r", encoding="utf-8") as f:
          ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 FileNotFoundError: [Errno 2] No such file or directory: 'his_43'
+WARNING: Unknown command: '('add', 2.0)'
+WARNING: Unknown command: 'save his_430_@'
+WARNING: Unknown command: 'save his_430_2.json'
+WARNING: Unknown command: 'save history.json'
+WARNING: Unknown command: 'load his_430.json'
+WARNING: Unknown command: 'remove 2'
+WARNING: Unknown command: 'remove 1'
+WARNING: Unknown command: 'save his501.json'
+WARNING: Unknown command: 'dave his_430.json'
+ERROR: Failed to load history from his_430_2.json
+Traceback (most recent call last):
+  File "/Users/ash14476/Library/CloudStorage/OneDrive-Esri/Github_repos/MasteringPython/Day4/Iterables/calc_app_mod_OOP_file_Iterable/history.py", line 47, in load_from_file
+    with open(file_name, "r", encoding="utf-8") as f:
+         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'his_430_2.json'
+ERROR: Failed to load history from his_430_2.json
+Traceback (most recent call last):
+  File "/Users/ash14476/Library/CloudStorage/OneDrive-Esri/Github_repos/MasteringPython/Day4/Iterables/calc_app_mod_OOP_file_Iterable/history.py", line 47, in load_from_file
+    with open(file_name, "r", encoding="utf-8") as f:
+         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'his_430_2.json'
+ERROR: Failed to load history from his_430_2.json
+Traceback (most recent call last):
+  File "/Users/ash14476/Library/CloudStorage/OneDrive-Esri/Github_repos/MasteringPython/Day4/Iterables/calc_app_mod_OOP_file_Iterable/history.py", line 47, in load_from_file
+    with open(file_name, "r", encoding="utf-8") as f:
+         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'his_430_2.json'
+WARNING: Unknown command: '('subtract', 2.0)'
+WARNING: Unknown command: '('history', None)'
