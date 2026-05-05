@@ -13,6 +13,6 @@ currencies=[
 
 # print(currency_dict)
 
-currency_dict = {name: sym for name, sym in currencies}
+currency_dict = {name: symbol for name, symbol in currencies}
 
 print(currency_dict)
